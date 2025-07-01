@@ -5,20 +5,19 @@ if ($_SERVER['SERVER_NAME'] == "localhost") {
     $username = 'root';
     $password = '';
 } else {
-    $host = 'localhost';
-    $dbname = 'h0122u0007_bryan';
-    $username = 'bryan';
-    $password = 'Murcia2024';
+    $host = getenv('DB_HOST') ?: 'localhost';
+    $dbname = getenv('DB_NAME') ?: '';
+    $username = getenv('DB_USER') ?: '';
+    $password = getenv('DB_PASS') ?: '';
 }
 
-
-
 try {
-    $conexion = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+    $conexion = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
     $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
     die("Error de conexión: " . $e->getMessage());
 }
+
 
 $sql = "CREATE TABLE IF NOT EXISTS users (
     id INT AUTO_INCREMENT PRIMARY KEY,
