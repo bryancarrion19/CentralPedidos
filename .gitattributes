@@ -1,0 +1,11 @@
+# Forzar estilo de fin de línea
+* text=auto
+
+# Archivos PHP siempre con LF (estilo Unix)
+*.php text eol=lf
+
+# Archivos por defecto (imágenes y binarios no se tocan)
+*.jpg binary
+*.png binary
+*.ico binary
+*.pdf binary
