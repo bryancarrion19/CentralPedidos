@@ -5,6 +5,15 @@ Esta app permite a los **camareros o trabajadores del local** administrar los pe
 
 ---
 
+## 🖼️ Preview
+
+![Pedidos preview](preview.png)
+![Pedidos preview](preview2.png)
+![Pedidos preview](preview3.png)
+![Pedidos preview](preview4.png)
+
+---
+
 ## 🧾 Descripción
 
 La aplicación está diseñada para facilitar el trabajo diario en el bar. Desde una interfaz moderna y clara, el equipo puede gestionar pedidos, visualizar estadísticas, controlar productos y mantener el flujo de trabajo sin interrupciones.
@@ -50,3 +59,4 @@ La aplicación está diseñada para facilitar el trabajo diario en el bar. Desde
 git clone https://github.com/tu-usuario/bar-central.git
 cd bar-central
 
+```
