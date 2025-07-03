@@ -53,7 +53,7 @@ La aplicación está diseñada para facilitar el trabajo diario en el bar. Desde
 
 ## ⚙️ Instalación
 
-1. Clona el repositorio:
+Clona el repositorio:
 
 ```bash
 git clone https://github.com/tu-usuario/bar-central.git
